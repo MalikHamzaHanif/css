@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mainbox {
+            background-color: yellow;
+            border: 2px solid red;
+        }
+
+        .mainheader {
+            border: 2px solid black;
+        }
+
+        span {
+            background-color: aqua;
+        }
+
+        div>span {
+            /* padding: 10px; */
+            /* this is for direct child */
+        }
+
+        div span {
+            /* padding: 10px; */
+
+            /* any span inside div */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            /* universal selector */
+        }
+
+        /* pseudo selectors */
+
+        a:visited {
+            background-color: red;
+        }
+
+        a:active {
+            background-color: blue;
+        }
+
+        a:hover {
+            background-color: white;
+        }
+
+        a:link {
+            background-color: green;
+        }
+
+        p:first-child {
+            /* where p is the first child */
+        }
+
+        p:last-child {
+            /* where p is the last child */
+        }
+
+        p:nth-child(odd) {
+            /* where p is odd */
+            background-color: blue;
+        }
+
+        p:nth-child(even) {
+            background-color: red;
+            /* where p is even */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>i am p1</p>
+        <p>i am p2</p>
+        <p>i am p3</p>
+        <p>i am p4</p>
+        <p>i am p5</p>
+        <p>i am p6</p>
+    </div>
+    <div id="mainbox">
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptas quas aut reprehenderit
+            minima in, nihil nemo soluta impedit itaque.</span>
+    </div>
+
+    <div class="mainheader">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, at. Nihil fugit voluptas vero assumenda,
+            laboriosam necessitatibus aliquid praesentium quidem eligendi ut consequuntur facilis dicta cum repellendus
+            maiores. Quod, ipsa.</p>
+    </div>
+    <div class="mainheader">
+        <ul>
+            <li>ali</li>
+            <li>rehman</li>
+            <li>hamza</li>
+        </ul>
+    </div>
+    <a href="https://www.google.com">go to google</a>
+</body>
+
+</html>
