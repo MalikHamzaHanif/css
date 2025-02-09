@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .main {
+            border: 2px solid red;
+            height: 20px;
+        }
+  /* max-width or height when it is in the range of say that given number in my case ihave set it to 300 so
+  when it is in this range it will apply this for min it means when i exceed that range
+  */
+        @media only screen and (max-width:300px){
+            .main{
+                background-color: green;
+            }
+        }
+
+        @media only screen and (max-width:500px){
+            .main{
+                background-color: red;
+            }
+        }
+
+        @media only screen and (min-width:800px){
+            .main{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+</body>
+</html>
