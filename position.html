@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            border: 2px solid black;
+            /* margin-top: 100px; */
+            position: relative;
+        }
+
+        #child2child {
+            height: 50px;
+            width: 50px;
+            border: 2px solid green;
+            position: sticky;
+            /* position: absolute; */
+            /* position: relative; */
+            /* position: fixed; */
+            top: 100px;
+
+        }
+
+        #child2 {
+            height: 150px;
+            width: 150px;
+            border-radius: 2px;
+            border: 2px solid red;
+            /* position: absolute; */
+            /* top: 10px; */
+        }
+
+        #child1 {
+            height: 450px;
+            width: 50px;
+            border-radius: 2px;
+            border: 2px solid red;
+        }
+
+        #extra {
+            height: 200px;
+            width: 100%;
+            border: 2px solid yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div id="extra"></div>
+        <div id="child2">
+            <div id="child2child"></div>
+        </div>
+        <div id="child1"></div>
+    </div>
+</body>
+
+</html>
