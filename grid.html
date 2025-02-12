@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids in Css</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        #main {
+            border: 2px solid black;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 100px 200px 200px auto;
+            grid-template-rows: 150px  150px auto;
+            row-gap: 10px;
+            justify-content: space-around;
+            align-items: space-between;
+           
+            column-gap: 10px;
+
+        }
+
+        .child {
+
+           
+            border: 2px solid red;
+         
+        }
+
+        .child:nth-child(1)  {
+            /* grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 4; */
+            
+        } */
+
+        /* .main {
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: "navbar navbar navbar"
+                                 "section section article"
+                                 "section section article"
+                                 "section section article"
+                                 " footer footer footer"
+            ;
+        }
+
+        /* #navbar {
+            border: 2px solid red;
+            grid-area: navbar;
+        }
+
+        #section {
+            border: 2px solid red;
+            grid-area: section;
+        }
+
+        #article {
+            border: 2px solid red;
+            grid-area: article;
+        }
+
+        #footer {
+            border: 2px solid red;
+            grid-area: footer;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div class="main">
+        <div id="navbar">navbar</div>
+        <div id="section">section</div>
+        <div id="article">article</div>
+        <div id="footer">footer</div>
+    </div> -->
+    <div id="main">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+        <div class="child">10</div>
+        <div class="child">11</div>
+        <div class="child">12</div>
+        <div class="child">13</div>
+        <div class="child">14</div>
+        <div class="child">15</div>
+        <div class="child">16</div>
+        <div class="child">17</div>
+        <div class="child">18</div>
+        <div class="child">19</div>
+        <div class="child">20</div>
+    </div>
+</body>
+
+</html>
