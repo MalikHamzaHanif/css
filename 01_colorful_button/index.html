@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Button Using Css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgba(37, 36, 36, 0.938);
+        }
+
+        #border-div {
+            background: linear-gradient(90deg, #ff416c, #ff4b2b, #ffcc00);
+            padding: 2px;
+            border-radius: 12px;
+        }
+
+        #main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            border-radius: 12px;
+            border: none;
+            background-color: black;
+            color: white;
+            font-size: 1.5rem;
+            padding: 1em 1.5em;
+            letter-spacing: .1em;
+        }
+
+        #border-div:hover {
+            background: linear-gradient(270deg, #ff416c, #ff4b2b, #ffcc00);
+        }
+        #border-div:hover button {
+            padding: 1.1em 1.6em;
+            letter-spacing: .2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="border-div">
+            <button>
+                Click Me
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
