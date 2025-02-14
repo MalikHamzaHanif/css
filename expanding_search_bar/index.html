@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding search bar challange</title>
+    <style>
+        input {
+            padding: 1em;
+            width: 15vw;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            outline: none;
+            border: 2px solid rgb(60, 60, 194);
+            border-radius: 12px;
+
+        }
+
+        input::placeholder {
+            color: black;
+
+        }
+
+        input:focus::placeholder {
+            /* visibility: hidden; */
+            color:transparent;
+
+        }
+
+        input:focus {
+            border-color: rgb(60, 60, 194);
+            width: 40vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <input type="text" placeholder="Search...">
+    </div>
+</body>
+
+</html>
