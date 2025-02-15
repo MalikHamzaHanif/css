@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Pen challange</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main {
+            background-color: rgb(63, 60, 60);
+            min-height: 40%;
+            width: 20%;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        #main:hover #likes {
+            display: flex;
+        }
+
+        #img-div img {
+            height: 160px;
+            width: 220px;
+            border-radius: 22px;
+            padding-top: 1rem;
+        }
+
+        #img img {
+            height: 40px;
+            width: 40px;
+            border-radius: 12px;
+        }
+
+        #user-info {
+
+            display: flex;
+
+            justify-content: space-around;
+        }
+
+        #heading-subheading {
+            padding-left: 12px;
+        }
+
+        h1 {
+            color: white;
+            font-size: .9rem;
+        }
+
+        p {
+            color: rgb(175, 168, 168);
+            font-size: .9em;
+        }
+
+        #likes {
+            display: none;
+            
+            min-width: 80%;
+
+            transition: all;
+        }
+
+        #heart {
+
+            margin-right: 10px;
+
+        }
+
+        #comment {}
+
+        .enhance-both {
+            display: flex;
+            background-color: black;
+            border-radius: 5px;
+            width: 23%;
+            padding: 2px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="img-div">
+            <img src="https://images.unsplash.com/photo-1507395245428-096cb1885d1f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="a image of a sky">
+        </div>
+        <div id="user-info">
+            <div id="img"><img
+                    src="https://images.unsplash.com/flagged/photo-1566127992631-137a642a90f4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="a monkey image used as a profile"></div>
+            <div id="heading-subheading">
+                <h1>Abstract gradient project</h1>
+                <p>alix buthooksladen</p>
+            </div>
+        </div>
+        <div id="likes">
+            <div id="heart" class="enhance-both">
+                <h1>&#10084</h1>
+                <h1>8</h1>
+            </div>
+            <div id="comment" class="enhance-both">
+                <h1>
+                    <h1>&#128173</h1>
+                </h1>
+                <h1>12</h1>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
