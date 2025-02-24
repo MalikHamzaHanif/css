@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading animation no 2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main {
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-height: 20%;
+            width: 20%;
+        }
+
+        .childs:nth-child(1) {
+            background-color: red;
+            animation: loading-animation-two;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            height: 50px;
+            width: 50px;
+        }
+
+        .childs:nth-child(2) {
+            background-color: blue;
+            animation: loading-animation-two;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            height: 50px;
+            width: 50px;
+        }
+
+        .childs:nth-child(3) {
+            background-color: green;
+            animation: loading-animation-two;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            height: 50px;
+            width: 50px;
+        }
+
+        @keyframes loading-animation-two {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="childs"></div>
+        <div class="childs"></div>
+        <div class="childs"></div>
+    </div>
+</body>
+
+</html>
