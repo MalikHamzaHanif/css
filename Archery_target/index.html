@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archery Target</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fl {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #first {
+            height: 300px;
+            width: 300px;
+            background-color: black;
+            border-radius: 100%;
+        }
+
+        #second {
+
+            height: 250px;
+            width: 250px;
+            background-color: rgb(104, 104, 233);
+            border-radius: 100%;
+        }
+
+        #third {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border-radius: 100%;
+        }
+
+        #fourth {
+            height: 150px;
+            width: 150px;
+            background-color: yellow;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="first" class="fl">
+            <div id="second" class="fl">
+                <div id="third" class="fl">
+                    <div id="fourth" class="fl"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
