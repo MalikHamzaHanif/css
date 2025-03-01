@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1::after {
+    content: "Cat";
+    background-color: blueviolet;
+    color: white;
+    animation: word_carousel;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes word_carousel {
+    0% {
+
+        content: "Cat";
+        background-color: blueviolet;
+
+
+    }
+
+    25% {
+
+        content: "Dog";
+        background-color: blueviolet;
+
+
+    }
+
+    50% {
+
+        content: "Hen";
+        background-color: blueviolet;
+
+
+    }
+
+    75% {
+
+        content: "Horse";
+        background-color: blueviolet;
+
+
+    }
+
+    100% {
+
+        content: "Cat";
+        background-color: blueviolet;
+
+    }
+}
