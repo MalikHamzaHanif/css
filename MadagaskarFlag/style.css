@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+
+}
+
+:root {
+    --flagHeight: 300px;
+}
+
+#flag {
+    height: var(--flagHeight);
+    width: calc(var(--flagHeight)*3/2);
+  
+    display: grid;
+    grid-template-areas:' leftt righttop'
+                        'leftt rightbottom';
+}
+
+#flag div:nth-child(1) {
+    grid-area: leftt;
+    background-color: white;
+    width: calc(var(--flagHeight)/2);
+
+}
+
+#flag div:nth-child(2) {
+    grid-area: righttop;
+    background-color: red;
+    height: calc(var(--flagHeight)/2);
+    
+    
+    width: var(--flagHeight);
+}
+
+#flag div:nth-child(3) {
+    height: calc(var(--flagHeight)/2);
+    grid-area: "rightbottom";
+    background-color: green;
+    
+    width: var(--flagHeight);
+}
